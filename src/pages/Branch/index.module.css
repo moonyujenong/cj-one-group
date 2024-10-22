@@ -1,0 +1,200 @@
+.container {
+    position: relative;
+    
+    .visual_banner {
+        position: relative;
+        background-color: #013024;
+        
+        img {
+            width: 100%;
+            min-height: 650px;
+            object-fit: cover;
+            max-height: 601px;
+            display: block;
+        }
+    }
+
+    .section_list {
+        position: absolute;
+        display: grid;
+        align-content: center;
+        top: 0;
+        bottom: 0;
+        gap: 35px;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+
+        li {
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 35px; /* 35.2px */
+            letter-spacing: -0.96px;
+            text-transform: uppercase;
+            color: #fff;
+
+            &.active {
+                color: #BADCD3;
+            }
+        }
+    }
+
+    .brunch_list {
+        background-color: #EBEAE5;
+        padding: 0 16px ;
+    }
+
+    .items {
+        display: grid;
+        gap: 21px;
+    }
+
+    .right {
+        order: 1;
+        margin: 0 -16px;
+        height: calc((100vw * 250 ) / 360);
+        overflow: hidden;
+        background-color: #969696;
+
+        img {
+            width: 100%;
+            display: block;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1.05);
+        }
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        gap: 86px;
+        order: 2;
+        min-height: 650px;
+
+        h3 {
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 39px; /* 39.6px */
+            letter-spacing: -1.08px;
+            text-transform: uppercase;
+            color: #013024;
+            margin-bottom: 10px;
+        }
+
+        p.category {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+            color: #013024;
+        }
+    }
+
+    .link {
+        width: 180px;
+        height: 70px;
+        text-align: center;
+        background-color: #013024;
+        border-radius: 5px;
+        color: #EBEAE5;
+        display: block;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 71px; /* 30.8px */
+        letter-spacing: -0.66px;
+        margin-bottom: 28px;
+    }
+
+    .address,
+    .call {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 21px;
+        color: #013024;
+    }
+
+    .intro {
+        margin-top: 15px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        color: #013024;
+    }
+
+    @media screen and (min-width:1024px) {
+        .section_list {
+            gap: 20px;
+
+            li {
+                font-size: 45px;
+                line-height: 49px;
+            }
+        }
+
+        .brunch_list  {
+            padding: 0;
+        }
+
+        .items {
+            padding: 47px 81px 53px 51px;
+            box-sizing: border-box;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+            border-bottom: 1px solid #013024;
+        }
+
+        .right {
+            order: 2;
+            margin: 0;
+            background-color: #C7C4B7;
+            width: calc((100vw * 1200) / 1920);
+            max-width: 1200px;
+            height: calc((100vw * 800) / 1920);
+            max-height: 800px;
+            border-radius: 15px;
+            height: 100%;
+
+            img {
+                transform: initial;
+            }
+        }
+
+        .left {
+            order: 1;
+            gap: 155px;
+            padding-top: 23px;
+            min-height: calc(650px - 23px);
+
+            h3 {
+                font-size: 45px;
+                margin-bottom: 11px;
+                line-height: 49px;
+                letter-spacing: -1.35px;
+                word-break: break-all;
+            }
+
+            p.category {
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+
+        .link {
+            width: 150px;
+            height: 62px;
+            font-size: 22px;
+            line-height: 61px;
+            margin-bottom: 27px;
+        }
+
+        .address,
+        .call  {
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        .intro {
+            line-height: 21px;
+        }
+    }
+}

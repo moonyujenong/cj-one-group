@@ -1,0 +1,71 @@
+.container {
+  position: relative;
+  margin: 0 -16px;
+  overflow: hidden;
+  
+  .slide_item {
+    width: auto;
+  }
+
+  .swipe {
+    padding: 0 16px;
+    overflow: initial;
+
+    :global(.swiper-pagination) {
+      position: relative;
+      margin-top: 30px;
+      border-radius: 100px;
+      background: rgba(186, 220, 211, 0.20);
+      height: 5px;
+
+      > span {
+        border-radius: 100px;
+        background-color: #fff;
+      }
+    }
+
+    :global(.swiper-button-prev),
+    :global(.swiper-button-next) {
+      display: none;
+    }
+  }
+
+  img {
+    max-width: 440px;
+    height: calc((100vw * 389) / 375);
+    max-height: 660px;
+  }
+
+  @media screen and (min-width:1024px) {
+      .swipe {
+        padding: 0 56px;
+
+        :global(.swiper-pagination) {
+          margin-top: 64px;
+        }
+
+        :global(.swiper-button-prev),
+        :global(.swiper-button-next) {
+          width: 57px;
+          height: 52px;
+          display: block;
+          background-image: url(../../../assets//images/icon-stic-arrow.svg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          right: 90px;
+          top: initial;
+          bottom: 119px;
+
+          &:after {
+            content: "";
+          }
+        }
+
+        :global(.swiper-button-prev) {
+          left: 90px;
+          transform: rotate(180deg);
+        }
+      }
+  }
+}
