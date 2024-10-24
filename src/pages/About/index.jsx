@@ -146,7 +146,7 @@ function About () {
                 <div className={style.comments_section}>
                     <div className={style.inner}>
                         {commentsList.map((item) => (
-                            <div className={style.comments_item}>
+                            <div className={style.comments_item} key={item.id}>
                                 <img alt="c logo" src={item.img} />
                                 <h3 className={style.title}><b>ONE</b> {item.title}</h3>
                                 <p>{item.explain}</p>
