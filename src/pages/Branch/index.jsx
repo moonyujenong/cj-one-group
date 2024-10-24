@@ -1,5 +1,5 @@
 import Layouts from "../../comoon/components/Layouts";
-import style from "./index.module.css";
+import style from "./index.module.scss";
 import visualBanner from "../../assets/images/branch/branch-visual-banner.png";
 import { branchData } from "./data";
 import { useRef } from "react";

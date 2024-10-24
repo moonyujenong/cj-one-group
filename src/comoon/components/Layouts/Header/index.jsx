@@ -1,4 +1,4 @@
-import style from "./index.module.css";
+import style from "./index.module.scss";
 import MobileHeader from "./MobileHeader";
 import PcHeader from "./PcHeader";
 import useResponsive from "../../../hook/Responsive";

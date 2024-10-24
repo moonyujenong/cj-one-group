@@ -61,16 +61,18 @@
         }
         
         .flex_box {
-            margin: 57px 0 55px;
-            padding: 0 36px;
+            margin: 57px 0 0;
+            padding: 0 15px;
             display: flex;
             flex-direction: column;
             gap: 33px;
 
             img {
-                width: 100%;
+                width: calc((100vw * 292) / 360);
+                height: calc((100vw * 292) / 360);
                 margin:0 auto;
                 max-width: 554px;
+                max-height: 554px;
                 aspect-ratio: 1/1;
                 object-fit: cover;
             }
@@ -283,6 +285,8 @@
 
                 img {
                     width: calc((100vw * 554) / 1920);
+                    height: calc((100vw * 554) / 1920);
+                    object-fit: cover;
                 }
             }
         }

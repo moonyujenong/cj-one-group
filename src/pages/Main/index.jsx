@@ -1,4 +1,4 @@
-import style from "./index.module.css";
+import style from "./index.module.scss";
 import Layouts from "../../comoon/components/Layouts";
 import visualImg from "../../assets/images/main/main-visual-img.png";
 import Slides from "./Slides";

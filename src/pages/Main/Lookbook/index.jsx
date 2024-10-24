@@ -1,4 +1,4 @@
-import style from "./index.module.css";
+import style from "./index.module.scss";
 
 function Lookbook () {
     const loobookList = [
