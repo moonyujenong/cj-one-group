@@ -8,14 +8,31 @@ import bottomImg1 from "../../assets/images/main/bottom-img-1.png";
 import bottomImg2 from "../../assets/images/main/bottom-img-2.png";
 import bottomImg3 from "../../assets/images/main/bottom-img-3.png";
 import { ParallaxProvider, useParallax } from 'react-scroll-parallax';
+import useResponsive from "../../comoon/hook/Responsive";
+import { useEffect, useState } from "react";
 
 function Main () {
+  const innerWidth = useResponsive();
+  const [parallaxSpeed, setParallaxSpeed] = useState();
+  const [parallaxSpeed2, setParallaxSpeed2] = useState();
+
+
+  useEffect(() => {
+    if(innerWidth >= 1024) {
+      setParallaxSpeed(-7);
+      setParallaxSpeed2(-8);
+    } else {
+      setParallaxSpeed(-3);
+      setParallaxSpeed2(-3);
+    }
+  }, [innerWidth])
+
   const parallax = useParallax({
-    speed: -7,
+    speed:parallaxSpeed,
   });
 
   const parallax2 = useParallax({
-    speed: -8,
+    speed:parallaxSpeed2,
   });
 
   return (
