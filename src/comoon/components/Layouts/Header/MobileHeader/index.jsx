@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import style from "./index.module.css";
+import style from "./index.module.scss";
 import logo from "../../../../../assets/images/logo.svg";
 import closeIcon from "../../../../../assets/images/icon-close.svg";
 import hamburgerIcon from "../../../../../assets/images/icon-hamburger.svg";

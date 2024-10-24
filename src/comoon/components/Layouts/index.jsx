@@ -1,4 +1,4 @@
-import style from "./index.module.css";
+import style from "./index.module.scss";
 import Header from "./Header";
 import Footer from "./Footer";
 import Body from "./Body";

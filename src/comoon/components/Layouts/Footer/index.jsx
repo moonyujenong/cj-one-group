@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import style from "./index.module.css";
+import style from "./index.module.scss";
 import fullLogo from "../../../../assets/images/logo-text.png";
 
 function Footer () {

@@ -1,4 +1,4 @@
-import style from "./index.module.css";
+import style from "./index.module.scss";
 import Layouts from '../../comoon/components/Layouts';
 import visualBanner from "../../assets/images/people/people-visual-banner.png";
 import ShapeImg from '../../comoon/components/ShapeImg';
