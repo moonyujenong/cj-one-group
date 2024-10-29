@@ -2,6 +2,7 @@ import style from "./index.module.scss";
 import Layouts from "../../comoon/components/Layouts";
 import visualImg from "../../assets/images/main/main-visual-img.png";
 import Slides from "./Slides";
+import section2Mobile from "../../assets/images/main/main-essence-bg-mobile.png";
 import section2Pc from "../../assets/images/main/main-essence-bg-pc.png";
 import Lookbook from "./Lookbook";
 import bottomImg1 from "../../assets/images/main/bottom-img-1.png";
@@ -53,7 +54,7 @@ function Main () {
 
           <Slides />
           <section className={style.second_section}>
-            <img alt="section bg" src={section2Pc} ref={parallax2.ref} />
+            <img alt="section bg" src={innerWidth >= 800 ? section2Pc : section2Mobile} ref={parallax2.ref} />
             <div className={style.text_box} >
               <h3 className={style.title}>BRAND ESSENCE</h3>
               <p>We maintain stable brand operations through strict principles and standards, ensuring consistent quality and service for our customers. We prioritize customer trust, placing the highest importance on people-centered values, and strive to deliver a consistently satisfying experience.</p>
