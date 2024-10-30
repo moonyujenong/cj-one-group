@@ -27,7 +27,7 @@ function Main () {
       setParallaxSpeed2(-8);
     } else {
       setParallaxSpeed(-3);
-      setParallaxSpeed2(-3);
+      setParallaxSpeed2(-4);
     }
   }, [innerWidth])
 
@@ -62,7 +62,9 @@ function Main () {
 
           <Slides />
           <section className={style.second_section}>
-            <img alt="section bg" src={innerWidth >= 800 ? section2Pc : section2Mobile} ref={parallax2.ref} />
+            <div className={style.parallax_wrap}>
+              <img alt="section bg" src={innerWidth >= 800 ? section2Pc : section2Mobile} ref={parallax2.ref} />
+            </div>
             <div className={style.text_box} >
               <h3 className={style.title}>BRAND ESSENCE</h3>
               <p>We maintain stable brand operations through strict principles and standards, ensuring consistent quality and service for our customers. We prioritize customer trust, placing the highest importance on people-centered values, and strive to deliver a consistently satisfying experience.</p>

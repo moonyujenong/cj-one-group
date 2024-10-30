@@ -79,10 +79,16 @@
     position: relative;
     margin: 83px -16px 36px;
 
-    img {
-      width: 100%;
-      object-fit: cover;
+    
+    .parallax_wrap {
+      position: relative;
       min-height: 650px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
 
     .text_box {

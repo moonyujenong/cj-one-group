@@ -95,7 +95,7 @@ function PcHeader () {
 
   return (
     <div className={style.container}>
-      <div className={style.inner} onClick={handleLnbOpen}>
+      <div className={style.inner}>
         {location.pathname === '/about' || location.pathname === '/people' ? 
         <Link to={'/'} className={style.logo}>
           <img alt="logo" src={logoFill} />
@@ -109,7 +109,7 @@ function PcHeader () {
 
         <ul className={style.menu_list}>
           {menuList.map((item) => (
-            <li key={item.id}>
+            <li key={item.id} onClick={handleLnbOpen}>
               <Link to={item.location} className={`${location.pathname === item.location && style.border} ${location.pathname === '/about' || location.pathname === '/people' ? style.changeColor : ''}`}>{item.name}</Link>
             </li>
           ))}
@@ -131,7 +131,9 @@ function PcHeader () {
                   <ul className={style.depth_menu}>
                     {item.twoDepthMenu.map((item2) => (
                       <li key={item2.id}>
-                        {item2.name2}
+                        <Link to={item.location}>
+                          {item2.name2}
+                        </Link>
                       </li>
                     ))}
                   </ul>

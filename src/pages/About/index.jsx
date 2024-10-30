@@ -15,6 +15,7 @@ import taglineImg1 from "../../assets/images/about/tagline-img-1.png";
 import taglineImg2 from "../../assets/images/about/tagline-img-2.png";
 import taglineImg3 from "../../assets/images/about/tagline-img-3.png";
 import storyBg from "../../assets/images/about/story-bg.png";
+import storyBgMobile from "../../assets/images/about/story-bg-mobile.png";
 import cLogo1 from "../../assets/images/about/c-logo-1.svg";
 import cLogo2 from "../../assets/images/about/c-logo-2.svg";
 import cLogo3 from "../../assets/images/about/c-logo-3.svg";
@@ -120,11 +121,11 @@ function About () {
                             <img alt="tagline img 1" src={taglineImg1} />
                         </span>
                         <span>
-                            <p>Stories In Every Flavor,</p>
+                            <p>Stories In<br/>Every Flavor,</p>
                             <img alt="tagline img 2" src={taglineImg2} />
                         </span>
                         <span>
-                            <p>Memories In Every Bite</p>
+                            <p>Memories In<br/>Every Bite</p>
                             <img alt="tagline img 3" src={taglineImg3} />
                         </span>
                     </div>
@@ -133,7 +134,7 @@ function About () {
                 </div>
 
                 <div className={style.story_section}>
-                    <img alt="brand story bg" src={storyBg} />
+                    <img alt="brand story bg" src={innerWidth >= 800 ? storyBg : storyBgMobile} />
                     <div className={style.text_box}>
                         <h3 className={style.title}>BRAND STORY</h3>
                         <div className={style.flex_box}>

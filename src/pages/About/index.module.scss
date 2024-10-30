@@ -146,9 +146,8 @@
         img {
             width: 100%;
             min-height: 650px;
-            max-height: 1000px;
+            
             object-fit: cover;
-            object-position: 31%;
             display: block;
         }
 
@@ -342,6 +341,7 @@
         .story_section {
             img {
                 object-position: initial;
+                max-height: 1000px;
             }
 
             .text_box {
