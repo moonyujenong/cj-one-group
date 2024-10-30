@@ -1,6 +1,5 @@
 import style from "./index.module.scss";
 import Layouts from "../../comoon/components/Layouts";
-import visualImg from "../../assets/images/main/main-visual-img.png";
 import Slides from "./Slides";
 import section2Mobile from "../../assets/images/main/main-essence-bg-mobile.png";
 import section2Pc from "../../assets/images/main/main-essence-bg-pc.png";
@@ -11,6 +10,10 @@ import bottomImg3 from "../../assets/images/main/bottom-img-3.png";
 import { ParallaxProvider, useParallax } from 'react-scroll-parallax';
 import useResponsive from "../../comoon/hook/Responsive";
 import { useEffect, useState } from "react";
+import shapeImg from "../../assets/images/main/main-visual-shape.png";
+import shapeInnerImg from "../../assets/images/main/main-visual-img-inner.png";
+import shapeImgMobile from "../../assets/images/main/shape-img-mobile.png";
+import logoText from "../../assets/images/logo-text.svg";
 
 function Main () {
   const innerWidth = useResponsive();
@@ -20,7 +23,7 @@ function Main () {
 
   useEffect(() => {
     if(innerWidth >= 1024) {
-      setParallaxSpeed(-7);
+      setParallaxSpeed(-20);
       setParallaxSpeed2(-8);
     } else {
       setParallaxSpeed(-3);
@@ -41,8 +44,13 @@ function Main () {
       <ParallaxProvider>
         <div className={style.container}>
           <section className={style.first_section}>
+            {innerWidth < 1024 && <img alt="logo text" className={style.text_logo} src={logoText} />}
+            
             <p>CJONE is a Korean cuisine-focused restaurant brand that originated in the UK. We leverage our extensive experience and expertise to deliver the authentic taste and charm of our dishes in diverse ways.</p>
-            <img alt="visual img" src={visualImg} ref={parallax.ref} />
+            <div className={style.shape_wrap}>
+              <img alt="shape" src={innerWidth >=1024 ? shapeImg : shapeImgMobile} className={style.shape_img} />
+              <img alt="shape inner" src={shapeInnerImg} className={style.inner_img} ref={parallax.ref} />
+            </div>
           </section>
           <div className={style.vision}>
             <h3 className={style.title}>BRAND VISION</h3>
