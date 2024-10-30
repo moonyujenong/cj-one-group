@@ -8,7 +8,7 @@ function Footer () {
       <div className={style.inner}>
         <div className={style.flex_wrap}>
           <img alt="full logo" src={fullLogo} />
-          <ul className={style.terms_list}>
+          {/* <ul className={style.terms_list}>
             <li>
               <Link to={'/participation'}>Rules of Participation</Link>
             </li>
@@ -18,7 +18,7 @@ function Footer () {
             <li>
               <Link to={'/temrs'}>Terms and Conditions</Link>
             </li>
-          </ul>
+          </ul> */}
         </div>
 
         <p className={style.info}>

@@ -11,16 +11,18 @@
     padding: 0 16px;
     overflow: initial;
 
-    :global(.swiper-pagination) {
+    :global(.swiper-scrollbar) {
       position: relative;
       margin-top: 30px;
       border-radius: 100px;
       background: rgba(186, 220, 211, 0.20);
       height: 5px;
+      border-radius: 100px;
+      overflow: hidden;
 
-      > span {
+      > div {
         border-radius: 100px;
-        background-color: #fff;
+        background-color:#BADCD3;
       }
     }
 
@@ -40,7 +42,7 @@
       .swipe {
         padding: 0 56px;
 
-        :global(.swiper-pagination) {
+        :global(.swiper-scrollbar) {
           margin-top: 64px;
         }
 
