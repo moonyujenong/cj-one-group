@@ -13,6 +13,8 @@
         
         li {
             padding: 0 18px;
+            box-sizing: border-box;
+            
             &:not(:last-child) {
                 border-bottom: 2px solid #BADCD3;
             }
@@ -105,6 +107,7 @@
             max-width: 520px;
             p {
                 font-size: 15px;
+                line-height: 21px;
             }
         }
     }
