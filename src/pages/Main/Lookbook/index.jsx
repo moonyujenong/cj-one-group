@@ -4,13 +4,13 @@ function Lookbook () {
     const loobookList = [
         {
             id:0,
-            number:'6',
-            title : '6 Sub-Brands Owned',
-            subTitle : 'CJONE has successfully launched six sub-brands, including café, dining, cupbap, and barbecue, all centered around Korean cuisine. Through these various concepts, we deliver the charm of a broad range of Asian culinary experiences to our customers.'
+            number:'7',
+            title : '7 Sub-Brands Owned',
+            subTitle : 'CJONE has successfully launched seven sub-brands, including café, dining, cupbap, and barbecue, all centered around Korean cuisine. Through these various concepts, we deliver the charm of a broad range of Asian culinary experiences to our customers.'
         },
         {
             id:1,
-            number:'2014',
+            number:'2015',
             title : 'Over 10 Years of Brand Operation',
             subTitle : 'With more than 10 years of experience, CJONE has established a stable operation in the UK restaurant industry, based on accumulated expertise and adherence to strict principles and standards. We ensure consistent quality and reliability in every experience we provide.'
         },
@@ -22,9 +22,9 @@ function Lookbook () {
         },
         {
             id:3,
-            number:'50',
-            title : 'More than 50 Employees',
-            subTitle : 'CJONE employs over 50 staff members, from marketing managers to highly skilled kitchen managers. We are committed to investing in talent, continually supporting the growth and development of our team members to deliver the highest level of service.'
+            number:'80',
+            title : 'More than 80 Employees',
+            subTitle : 'CJONE employs over 80 staff members, from marketing managers to highly skilled kitchen managers. We are committed to investing in talent, continually supporting the growth and development of our team members to deliver the highest level of service.'
         }
     ]
 
