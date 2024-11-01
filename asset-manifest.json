@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/cj-one-group/static/css/main.10ce2bc6.css",
-    "main.js": "/cj-one-group/static/js/main.d5a12e8f.js",
-    "static/css/253.86ffe94c.chunk.css": "/cj-one-group/static/css/253.86ffe94c.chunk.css",
-    "static/js/253.bbf3a856.chunk.js": "/cj-one-group/static/js/253.bbf3a856.chunk.js",
+    "main.js": "/cj-one-group/static/js/main.d72f9218.js",
+    "static/css/253.e71e14d8.chunk.css": "/cj-one-group/static/css/253.e71e14d8.chunk.css",
+    "static/js/253.33a7a7ec.chunk.js": "/cj-one-group/static/js/253.33a7a7ec.chunk.js",
     "static/css/886.103b22ff.chunk.css": "/cj-one-group/static/css/886.103b22ff.chunk.css",
     "static/js/886.910b6523.chunk.js": "/cj-one-group/static/js/886.910b6523.chunk.js",
     "static/css/890.78e45bbf.chunk.css": "/cj-one-group/static/css/890.78e45bbf.chunk.css",
@@ -17,7 +17,6 @@
     "static/media/about-visual-banner.png": "/cj-one-group/static/media/about-visual-banner.9e0f8c0cb78c7529c909.png",
     "static/media/main-essence-bg-pc.png": "/cj-one-group/static/media/main-essence-bg-pc.892e9e32d90a4d93e03f.png",
     "static/media/story-bg.png": "/cj-one-group/static/media/story-bg.5776f25a56a824f9a286.png",
-    "static/media/main-visual-img-inner.png": "/cj-one-group/static/media/main-visual-img-inner.d0876397e87211c45479.png",
     "static/media/branch-img-2.png": "/cj-one-group/static/media/branch-img-2.3f41419313d5c07d0a48.png",
     "static/media/branch-img-4.png": "/cj-one-group/static/media/branch-img-4.e7f330d6fe9bbf2c4f9a.png",
     "static/media/branch-img-5.png": "/cj-one-group/static/media/branch-img-5.e024b89d6c06ef9516cc.png",
@@ -25,6 +24,7 @@
     "static/media/branch-img-3.png": "/cj-one-group/static/media/branch-img-3.b93e981df074839ec9a3.png",
     "static/media/branch-img-1.png": "/cj-one-group/static/media/branch-img-1.0d5d8e1a2f90436f770a.png",
     "static/media/slogan-img.png": "/cj-one-group/static/media/slogan-img.d3fc9cfcdafe30568cb7.png",
+    "static/media/main-visual-img-inner.png": "/cj-one-group/static/media/main-visual-img-inner.98dd0aaf5827d14cd6fe.png",
     "static/media/main-slide-4.png": "/cj-one-group/static/media/main-slide-4.6291f730de5c82b5b4ce.png",
     "static/media/main-slide-6.png": "/cj-one-group/static/media/main-slide-6.5a4392762a60a1094098.png",
     "static/media/branch-visual-banner.png": "/cj-one-group/static/media/branch-visual-banner.60e967ee0f40dfd16b36.png",
@@ -74,9 +74,9 @@
     "static/media/icon-shape.svg": "/cj-one-group/static/media/icon-shape.2989ce8e238b46c999b9daca068d1178.svg",
     "static/media/icon-stic-arrow.svg": "/cj-one-group/static/media/icon-stic-arrow.1127ddf4a39967b62d47.svg",
     "main.10ce2bc6.css.map": "/cj-one-group/static/css/main.10ce2bc6.css.map",
-    "main.d5a12e8f.js.map": "/cj-one-group/static/js/main.d5a12e8f.js.map",
-    "253.86ffe94c.chunk.css.map": "/cj-one-group/static/css/253.86ffe94c.chunk.css.map",
-    "253.bbf3a856.chunk.js.map": "/cj-one-group/static/js/253.bbf3a856.chunk.js.map",
+    "main.d72f9218.js.map": "/cj-one-group/static/js/main.d72f9218.js.map",
+    "253.e71e14d8.chunk.css.map": "/cj-one-group/static/css/253.e71e14d8.chunk.css.map",
+    "253.33a7a7ec.chunk.js.map": "/cj-one-group/static/js/253.33a7a7ec.chunk.js.map",
     "886.103b22ff.chunk.css.map": "/cj-one-group/static/css/886.103b22ff.chunk.css.map",
     "886.910b6523.chunk.js.map": "/cj-one-group/static/js/886.910b6523.chunk.js.map",
     "890.78e45bbf.chunk.css.map": "/cj-one-group/static/css/890.78e45bbf.chunk.css.map",
@@ -89,6 +89,6 @@
   },
   "entrypoints": [
     "static/css/main.10ce2bc6.css",
-    "static/js/main.d5a12e8f.js"
+    "static/js/main.d72f9218.js"
   ]
 }
