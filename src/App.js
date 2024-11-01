@@ -11,7 +11,7 @@ const People = lazy(() => import("./pages/People"));
 function App() {
   return (
     <ParallaxProvider>
-      <BrowserRouter basename="/cj-one-group">
+      <BrowserRouter basename="/">
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
             <Route path="/" element={<Main />} /> 
