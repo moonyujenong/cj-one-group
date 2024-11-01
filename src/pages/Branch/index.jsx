@@ -54,7 +54,7 @@ function Branch () {
                                     <p className={style.category}>{item.category}</p>
                                 </div>
                                 <div className={style.contents}>
-                                    <a href="#!" className={style.link}>Go to web</a>
+                                    <a href={item.link} target="_blank" className={`${style.link} ${!item.link && style.no_link}`} rel="noreferrer">Go to web</a>
                                     <p className={style.address}>{item.address}</p>
                                     <p className={style.call}>TEL : {item.call}</p>
                                     <p className={style.intro}>{item.explain}</p>
