@@ -17,7 +17,7 @@
     "swiper": "^11.1.14",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://cj-onegroup.com/",
+  "homepage": "https://moonyujenong.github.io/cj-one-group/",
   "scripts": {
     "start": "craco start",
     "build": "craco build",
